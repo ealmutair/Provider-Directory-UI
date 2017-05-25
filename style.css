@@ -1,0 +1,36 @@
+	body{
+		margin: 40px;
+	}
+/*
+The style is CSS Grid system 
+The wrapper could be divided as layout based on 960px (320 , 640) or rule of third
+ */
+	.wrapper {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 320px  320px  320px; 
+		grid-template-areas:
+		"header header  header"
+		"sidebar content content"
+		"footer footer footer";
+		
+	}
+	.box {
+		background-color: #444;
+		color: #fff;
+	}
+	.sidebar {
+		grid-area: sidebar;
+	}
+
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+	.footer{
+		grid-area:footer;
+	}
+
