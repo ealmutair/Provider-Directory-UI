@@ -1,5 +1,6 @@
 	body{
 		margin: 40px;
+		font-family: arial, sans-serif;
 	}
 /*
 The style is CSS Grid system 
@@ -33,4 +34,33 @@ The wrapper could be divided as layout based on 960px (320 , 640) or rule of thi
 	.footer{
 		grid-area:footer;
 	}
+/* SideBar */
+.form{
 
+}
+
+#select{
+
+width: 100%;
+height: 620px;
+background-size: cover;
+}
+
+#select_wrapper{
+height: 40px;
+width: 500px;
+background:grey;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+
+opacity: 0.7;
+filter:alpha(opacity=70);/* IE8 earlier */
+}
+
+#select_wrapper ul li{
+	list-style: none;
+	display: inline;
+	font-weight: bold;
+	padding: 5px;
+}
