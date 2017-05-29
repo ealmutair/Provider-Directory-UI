@@ -12,28 +12,34 @@
 	<div class="wrapper">
 		<div class="box header"><h1>Provider Directory</h1></div>
 		<div class="box sidebar">
-	<h1>sideBar</h1>
+	<h3>sideBar</h3>
 
 	<!--Box sider will be a form  and it will be to the left of the page.
 	It has a submit button at the left bottem-->
-
-<form id="form">
-		<label class="label">Last Name</label>
+<div id="form">
+<form >
+		<p><label class="label">Last Name</label>
 		<input class="input" type="text" name="Last Name" value="Last Name" id="LastName"><br>
-		<label class="label">First Name</label>
-		<input class="label" type="text" name="First Name" value="First Name" id="FirstName"><br>
-		<label class="label">Email Address</label>
-		<input class="label" type="text" name="Email Address" value="Address" id="Address"><br>
-		<label class="label">Speciality</label>
-		<input class="label" type="text" name="Speciality" value="Speciality" id="Speciality"><br>
-		<label class="label">Practice Name</label>
-		<input class="label" type="text" name="Practice Name" value="Practice Name" id="PracticeName"><br>
-		<button type="submit">Submit</button>
+		</p>
+		<p><label class="label">First Name</label>
+		<input class="input" type="text" name="First Name" value="First Name" id="FirstName"><br>
+		</p>
+		<p><label class="label">Email Address</label>
+		<input class="input" type="text" name="Email Address" value="Address" id="Address"><br>
+		</p>
+		<p><label class="label">Speciality</label>
+		<input class="input" type="text" name="Speciality" value="Speciality" id="Speciality"><br>
+		</p>
+		<p><label class="label">Practice Name</label>
+		<input class="input" type="text" name="Practice Name" value="Practice Name" id="PracticeName"><br>
+		</p>
 	</form>
+	<button id="submit" type="submit">Submit</button>
+</div>
 </div>
 
 <div class="box content">
- <h1>content</h1>
+ 
  <!--Box Content could be a table or unorder list ,and it will be in the middle and the right side of the page.
 		 It has header title to the left.
 		 It has sort box to the right in the header box using select & options.
@@ -44,16 +50,18 @@
 	<br>
 	<div id="select_wrapper">
 		<ul>
-			<li>By Last Name</li>
-			<li>By First Name</li>
-			<li>By Email</li>
-			<li>By Address</li>
+		<h4 id="h4">Sort By | </h4>
+			<li><a href="" onclick="">Last Name</a></li>
+			<li><a href="" onclick="">First Name</a></li>
+			<li><a href="" onclick="">Email</a></li>
+			<li><a href="" onclick="">Address</a></li>
 		</ul>
 		</div>
 		<br>
 </div>
 
 <!-- Left Side content-->
+<div id="content">
 		 <ul id="leftList">
 		 	<li type="Check Box">Last Name  First Name<ul>Email Address</ul></li>
 		 </ul>
@@ -62,7 +70,7 @@
 		 <ul id="RightList">
 		 	<li>Practice Name<ul>Specialiest</ul></li>
 		 </ul>
-
+</div>
 		</div>
 		<div class="box footer">Footer</div>
 	</div>
