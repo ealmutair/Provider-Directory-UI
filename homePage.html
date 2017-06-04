@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href="script.js">
+	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="dataSet.json">
 </head>
 
 
 <body>
+
 	<div class="wrapper">
 		<div class="box header"><h1>Provider Directory</h1></div>
 		<div class="box sidebar">
@@ -17,7 +19,7 @@
 	<!--Box sider will be a form  and it will be to the left of the page.
 	It has a submit button at the left bottem-->
 <div id="form">
-<form >
+<form id="sider" >
 		<p><label class="label">Last Name</label>
 		<input class="input" type="text" name="Last Name" value="Last Name" id="LastName"><br>
 		</p>
@@ -46,6 +48,7 @@
 		 scroll down box list
 		 It has a delete button at the right bottem-->
 
+
 <div id="select">
 	<br>
 	<div id="select_wrapper">
@@ -61,15 +64,18 @@
 </div>
 
 <!-- Left Side content-->
-<div id="content">
-		 <ul id="leftList">
-		 	<li> <id id="LeftRow">  <input type="checkbox" name="" value="LastName ,"> Last Name <label>First Name</label></id><ul>Email Address</ul></li>
+
+<form id="content">
+<div id="content2" align="center">
+		 <ul id="leftList" align="left">
+		 	<li> <id id="LeftRow">  <input type="checkbox" id="data1" name="" value="LastName ,"> Last Name <label id="data2">First Name</label></id><ul id="data3">Email Address</ul></li>
 		 </ul>
 
-<!-- Left Side content-->
-		 <ul id="RightList">
-		 <li> <id id="RightRow">  <label>Speciality</label></id><ul>Practice Name</ul></li>
+<!-- Right Side content-->
+		 <ul id="RightList" align="right">
+		 <li> <id id="RightRow">  <label id="data4">Speciality</label></id><ul id="data5">Practice Name</ul></li>
 </div>
+</form>
 		</div>
 		<div class="box footer"><p id="copyRight" >Updox 2017 &copy;</p></div>
 	</div>
